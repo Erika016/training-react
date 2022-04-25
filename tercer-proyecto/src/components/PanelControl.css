@@ -1,0 +1,12 @@
+.login{
+    width: 286px;
+    height: 380px;
+    border:1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5em;
+    padding: 4em;
+    border-radius: 10px;
+    background-color: aqua;
+}

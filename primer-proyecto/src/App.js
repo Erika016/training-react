@@ -1,4 +1,4 @@
-import { Tarjeta } from "./components/Tarjetas";
+import { ColourTarjeta, Tarjeta } from "./components/Tarjetas";
 
 
 function App() {
@@ -8,22 +8,27 @@ function App() {
         titulo="TWITTER"
         descripcion="Lorem Ipsum is simply dummy text of the printing and typesetting industry."
         textoBoton="READ MORE"
-        color="black"
+        esPremium={false}
       />
       <Tarjeta
         titulo="INSTAGRAM"
         descripcion="Lorem Ipsum is simply dummy text of the printing and typesetting industry."
         textoBoton="READ MORE"
-        color="pink"
+        esPremium={true}
       />
       <Tarjeta
         titulo="YOUTUBE"
         descripcion="Lorem Ipsum is simply dummy text of the printing and typesetting industry."
         textoBoton="READ MORE"
-        color="black"
+        esPremium={false}
       />
+
+      <ColourTarjeta
+       resultado={true } />
     </div>
   );
+  
 }
+
 
 export default App;

@@ -5,7 +5,7 @@ export function Tarjeta(props) {
     <div
       className="Tarjeta-container"
       style={{
-        border: `2px solid ${props.color}`,
+        border: `2px solid ${props.esPremium ? "yellow" : "black"}`,
       }}
     >
       <div style={{ padding: 16 }}>
@@ -20,7 +20,7 @@ export function Tarjeta(props) {
             width: "100%",
             height: 44,
             borderRadius: 22,
-            backgroundColor: props.color,
+            backgroundColor: props.esPremium ? "yellow" : "black",
             border: "none",
             color: "white",
           }}
@@ -31,11 +31,11 @@ export function Tarjeta(props) {
     </div>
   );
 }
-const resultado= true;
-export function colourTarjeta(){
-    return(
-        <div>
-            {resultado ? <h2>Esto es verdad</h2> : <h2>Esto no es cierto</h2> }
-        </div>
-    )
+
+export function ColourTarjeta(props){
+    // return(
+    //     <div>
+    //         {props.resultado ? <h2>Esto es verdad</h2> : <h2>Esto no es cierto</h2> }
+    //     </div>
+    // )
 }
