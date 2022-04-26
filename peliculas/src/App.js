@@ -1,9 +1,7 @@
 // import logo from './logo.svg';
 // import './App.css';
 
-import { Superheroes } from "./components/Superheroes";
-import { Terror } from "./components/Terror";
-import { Animacion } from "./components/Animacion";
+
 
 // const personajes=["Batman", "Grogu", "Spiderman", "Goku", "Krillin", "Groot" ]
 
@@ -16,6 +14,7 @@ import { Animacion } from "./components/Animacion";
 // }
 
 // export default App;
+import { Categoria } from "./components/Categoria";
 
 const listado = [
   {
@@ -42,25 +41,16 @@ const listado = [
 // 3. En App.js hacer un map sobre el listado completo
 
 function App() {
-  return;
-//   <div> {Superheroes.map(Superheroes=>` ${Superheroes}`)}
-//   </div>
-  <div>
-    {Superheroes.map(Superheroes =>
-        {"Superheroes"}
-        <Categoria-titulo de peliculas />
-        
-        <Peliculas-titulo de películas />)
-    }
-  </div>;
-//   <div>
-//     <ol>
-//       {Terror.map((item) => (
-//         <li> ${props.children}</li>
-//       ))}
-//     </ol>
-//   </div>;
-}
+  return(
+      <div>
+          {listado.map((info)=>(
+
+            <Categoria titulo={info.categoria} peliculas={info.peliculas}/>
+          ))}
+      </div>
+  );
+          }
+
 export default App;
 //  <ol>
 //    {personajes.map(personajes=> <li>{personajes}- Cine HBO</li>)}
