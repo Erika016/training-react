@@ -1,11 +1,14 @@
-import './App.css';
-import {Login} from "./components/Login";
+import { LoginForm } from "./components/LoginForm";
+
+import classes from './App.module.css'
 
 function App() {
   return (
-<div>
-<Login/>
-</div>
+    <div className={classes.container}>
+      <div className={classes.formContainer}>
+        <LoginForm titulo="Iniciar sesión" />
+      </div>
+    </div>
   );
 }
 

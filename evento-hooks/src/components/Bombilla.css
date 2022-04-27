@@ -1,0 +1,18 @@
+.bombilla{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+.negro{
+    background-color: black;
+}
+
+.rojo{
+    background-color: red;
+}
+.naranja{
+    background-color: orange;
+}
+.verde{
+    background-color:green;
+}
