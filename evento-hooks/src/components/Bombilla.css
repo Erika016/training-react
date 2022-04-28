@@ -1,4 +1,4 @@
-.bombilla{
+/* .bombilla{
     height: 100px;
     width: 100px;
     border-radius: 50%;
@@ -15,4 +15,26 @@
 }
 .verde{
     background-color:green;
+} */
+
+.bombilla {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+.negro {
+    background-color: black;
+}
+
+.rojo {
+    background-color: red;
+}
+
+.verde {
+    background-color: green;
+}
+
+.naranja {
+    background-color: orange;
 }

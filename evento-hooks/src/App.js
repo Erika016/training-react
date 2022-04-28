@@ -75,25 +75,59 @@ import "./App.css";
 //   );
 // }
 
-export default App;
-import "./App.css";
+// export default App;
+// import "./App.css";
+// import { useState } from "react";
+
+// function App() {
+//   const [idLampara, setIdLampara] = useState();
+
+//   const bucleSemaforo = () => {
+// switch
+//   }
+
+//   return (
+//     <div>
+//       <Bombilla color="rojo" encendida={idLampara==="rojo"}/>
+//       <Bombilla color="naranja" encendida={idLampara==="naranja"}/>
+//       <Bombilla color="verde" encendida={idLampara==="verde"}/>      
+//       <button onClick={() => setIdLampara("rojo")}>Rojo</button>
+//     </div>
+//   );
+// }
+
+// // export default App;
 import { useState } from "react";
+import { Bombilla } from "./components/Bombilla";
 
 function App() {
   const [idLampara, setIdLampara] = useState();
-
+    
   const bucleSemaforo = () => {
-switch
-  }
+      switch (idLampara) {
+        case "rojo":
+          setIdLampara("verde")
+          break;
+        case "verde":
+          setIdLampara("naranja")
+          break
+        case "naranja":
+          setIdLampara("rojo")
+          break;
+        default:
+          setIdLampara("verde")
+          break;
+      }
+    }
 
   return (
     <div>
-      <Bombilla color="rojo" encendida={idLampara==="rojo"}/>
-      <Bombilla color="naranja" encendida={idLampara==="naranja"}/>
-      <Bombilla color="verde" encendida={idLampara==="verde"}/>      
-      <button onClick={() => setIdLampara("rojo")}>Rojo</button>
+      <Bombilla color="rojo" encendida={idLampara === "rojo"} />
+      <Bombilla color="naranja" encendida={idLampara === "naranja"} />
+      <Bombilla color="verde" encendida={idLampara === "verde"} />
+      <Button onClick={bucleSemaforo} />
     </div>
   );
 }
 
-// export default App;
+export default App;
