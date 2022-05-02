@@ -1,0 +1,24 @@
+.formulario{
+    max-width: 250px;
+    padding: 1rem;
+    margin: 0 auto;
+    border-radius: 1rem;
+    background-color: aquamarine;
+}
+.formulario h1{
+    font-size: 1.5em;
+    text-align: center;
+}
+.formulario label{
+    width: 100%;
+}
+.formulario input{
+    width: 96%;
+    margin: .5rem 0;
+    padding: .5rem 2%;
+    border-radius: .3rem;
+    color: black;
+}
+.boton{
+    text-align: center;    
+}

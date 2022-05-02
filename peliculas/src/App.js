@@ -40,18 +40,30 @@ const listado = [
 // 2. Dentro del componente Categoria, crear una lista con <ol> y <li> de cada pelicula en esa categoria
 // 3. En App.js hacer un map sobre el listado completo
 
-function App() {
-  return(
-      <div>
-          {listado.map((info)=>(
+// function App() {
+//   return(
+//       <div>
+//           {listado.map((info)=>(
 
-            <Categoria titulo={info.categoria} peliculas={info.peliculas}/>
-          ))}
-      </div>
-  );
-          }
+//             <Categoria titulo={info.categoria} peliculas={info.peliculas}/>
+//           ))}
+//       </div>
+//   );
+//           }
 
-export default App;
-//  <ol>
+// export default App;
+// //  <ol>
 //    {personajes.map(personajes=> <li>{personajes}- Cine HBO</li>)}
 //  </ol>
+function App (){
+  return(
+<div>
+  {listado.map((info)=>(
+    <Categoria 
+    titulo={info.categoria}
+     peliculas={info.peliculas}/>
+  ))}
+</div>
+  );
+}
+export default App

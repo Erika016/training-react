@@ -1,12 +1,11 @@
-import { LoginForm } from "./components/LoginForm";
-
 import classes from './App.module.css'
+import { Auth } from "./components/Auth";
 
 function App() {
   return (
     <div className={classes.container}>
       <div className={classes.formContainer}>
-        <LoginForm titulo="Iniciar sesión" />
+        <Auth><div>Videos</div></Auth>
       </div>
     </div>
   );

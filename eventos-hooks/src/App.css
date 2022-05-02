@@ -1,0 +1,20 @@
+.circulo{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.encendido{
+  background-color: yellowgreen;
+}
+.apagado{
+  background-color: black;
+}
+.rojo{
+  background-color: red;
+}
+.naranja{
+  background-color: orange;
+}
+.verde{
+  background-color: green;
+}

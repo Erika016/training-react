@@ -1,0 +1,9 @@
+.panel {
+  max-width: 150px;
+  padding: 1rem;
+  margin: 0 auto;
+  border-radius: 1rem;
+  background-color: aquamarine;
+  display: column;
+  align-items: center;
+}
