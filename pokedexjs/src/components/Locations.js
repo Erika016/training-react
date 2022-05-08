@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState } from "react";
-import { GeneralContext } from "./components/Context";
-import LocationDetail from "./components/LocationDetail";
+import { GeneralContext } from "./Context";
+import LocationDetail from "./LocationDetail";
 
 
 
@@ -23,7 +23,7 @@ const Locations = () => {
         {state.locations.map((location) => (
           <li key={location.name}>
             <button
-              onClick={() => setState({...state, Location: location.name})}
+              onClick={() => setState({...state, selectedLocation: location.name})}
             >
               {location.name}
             </button>

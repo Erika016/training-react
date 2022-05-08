@@ -3,6 +3,7 @@ import { GeneralContext, INITIAL_STATE } from "./components/Context";
 import Locations from "./components/Locations";
 
 
+
 function App() {
  const { state, setState } = useContext(GeneralContext)
 

@@ -1,8 +1,8 @@
-import React, { useContext, useEffect, useState } from "react";
-import { GeneralContext, INITIAL_STATE } from "./components/Context";
+import React, { useContext, useEffect, } from "react";
+import { GeneralContext, INITIAL_STATE } from "./Context";
 
 
-const LocationDetail= () => {
+const LocationDetail = () => {
   const {state, setState} = useContext(GeneralContext)
 
   useEffect(() => {
